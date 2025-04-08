@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackBud - Find a Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            color: white;
+            background-color: black;
+            /* Optional, just so you can see the white text */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Hackathon Team Mate Finder</div>
+        <ul class="nav-links">
+            <li><a href="#">Hackathons</a></li>
+            <li><a href="find-team.html">Find a Team</a></li>
+            <li><a href="#">My Teams</a></li>
+        </ul>
+        <button class="logout-btn">Logout</button>
+    </nav>
+
+    <main class="find-team-page">
+        <h1>Recommended Teammates</h1>
+        <div class="filters">
+            <input type="text" placeholder="Filter by Tech Stack">
+            <button>Apply</button>
+        </div>
+        <div class="teammate-list">
+            <!-- Sample Teammate Card -->
+            <div class="teammate-card">
+                <img src="https://www.uplers.com/wp-content/uploads/2021/06/06-891x505.jpg" alt="Profile Picture" 
+                style="height: 20vh; width: auto;">
+                <h2>John Doe</h2>
+                <p>Skills: Python, AI, Machine Learning</p>
+                <p>Experience: Intermediate</p>
+                <a href="team-details.html" class="btn">View Profile</a>
+                <button class="btn" onclick="sendRequest('John Doe')">Send Request To Join Team</button>
+            </div>
+            <script>
+                function sendRequest(name) {
+                    alert(`Request sent to ${name} to join your team!`);
+                    // You can replace this with actual logic, like an API call or form submission
+                }
+            </script>
+            <div class="teammate-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCyKhP-aTirrrKkqQDPGQ1ewWKESefojckrw&s" alt="Profile Picture"
+                    style="height: 20vh; width: auto;">
+                <h2>John Doe</h2>
+                <p>Skills: Python, AI, Machine Learning</p>
+                <p>Experience: Intermediate</p>
+                <a href="team-details.html" class="btn">View Profile</a>
+                <button class="btn" onclick="sendRequest('John Doe')">Send Request To Join Team</button>
+            </div>
+            <script>
+                function sendRequest(name) {
+                    alert(`Request sent to ${name} to join your team!`);
+                    // You can replace this with actual logic, like an API call or form submission
+                }
+            </script>
+            <div class="teammate-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLWv_nxJSgjPJJDWtP2QxSvaNZH2W5bLGZvQ&s" alt="Profile Picture"
+                    style="height: 20vh; width: auto;">
+                <h2>John Doe</h2>
+                <p>Skills: Python, AI, Machine Learning</p>
+                <p>Experience: Intermediate</p>
+                <a href="team-details.html" class="btn">View Profile</a>
+                <button class="btn" onclick="sendRequest('John Doe')">Send Request To Join Team</button>
+            </div>
+            <script>
+                function sendRequest(name) {
+                    alert(`Request sent to ${name} to join your team!`);
+                    // You can replace this with actual logic, like an API call or form submission
+                }
+            </script>
+            <div class="teammate-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6XV03d4EQ5QoHHOR9TYIdALpztqqLLubUxeZK-dXG9kERf7xh4bZ5nJJjINDb-XSjHCM&usqp=CAU" alt="Profile Picture"
+                    style="height: 20vh; width: auto;">
+                <h2>John Doe</h2>
+                <p>Skills: Python, AI, Machine Learning</p>
+                <p>Experience: Intermediate</p>
+                <a href="team-details.html" class="btn">View Profile</a>
+                <button class="btn" onclick="sendRequest('John Doe')">Send Request To Join Team</button>
+            </div>
+            <script>
+                function sendRequest(name) {
+                    alert(`Request sent to ${name} to join your team!`);
+                    // You can replace this with actual logic, like an API call or form submission
+                }
+            </script>
+            
+            <!-- More Teammate Cards -->
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackBud - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            color: white;
+            background-color: rgb(243, 237, 237);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .site-header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            border-bottom: 2px solid #444;
+        }
+
+        .signup-section {
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            background-color: #333;
+            border: 1px solid #555;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #00b894;
+            color: black;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        small {
+            display: block;
+            margin-top: 5px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <nav class="navbar">
+        <div class="logo" style="color: white;">Hackathons Team Mate Finder</div>
+        <ul class="nav-links">
+            <li><a href="#">Hackathons</a></li>
+            <li><a href="create-team.html">Create Team</a></li>
+            <li><a href="find-team.html">Join a Team</a></li>
+            <li><a href="team-details.html">My Team</a></li>
+            <li><a href="signup.html">Build Your Profile</a></li>
+    
+    
+        </ul>
+        <button class="feedback-btn">Feedback ?</button>
+        <button class="logout-btn">Logout</button>
+    </nav>
+
+    <section class="signup-section">
+        <h2 style="text-align: center;">Build Your Profile</h2>
+
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" maxlength="160" required></textarea>
+                <small id="bio-length">160 characters remaining</small>
+            </div>
+            <div class="form-group">
+                <label for="profile-picture">Profile Picture:</label>
+                <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" placeholder="e.g., Python, UI/UX, AI" required>
+            </div>
+            <div class="form-group">
+                <label for="experience-level">Experience Level:</label>
+                <select id="experience-level" name="experience-level" required>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="availability">Availability:</label>
+                <input type="text" id="availability" name="availability" placeholder="e.g., Weekends, Evenings"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="preferred-hackathons">Preferred Hackathons:</label>
+                <input type="text" id="preferred-hackathons" name="preferred-hackathons"
+                    placeholder="e.g., AI, Web Development" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
