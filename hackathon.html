@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackathon Board</title>
+    <style>
+        /* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #001d3d;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffc300;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffc300;
+}
+
+.logout-btn {
+  background-color: #ffc300;
+  color: black;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #ffd60a;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #001d3d;
+}
+
+/* Hackathon Grid */
+.hackathon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+/* Hackathon Card */
+.hackathon-card {
+  background-color: #fff;
+  padding: 20px;
+  border-left: 6px solid #003566;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.hackathon-card:hover {
+  transform: translateY(-5px);
+}
+
+.hackathon-card h2 {
+  color: #003566;
+  margin-bottom: 10px;
+}
+
+.hackathon-card ul {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.hackathon-card ul li {
+  margin-bottom: 5px;
+}
+
+.hackathon-card p {
+  margin-bottom: 15px;
+}
+
+/* Apply Button */
+.apply-btn {
+  background-color: #ffc300;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #ffcf48;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Hackathons Team Mate Finder</div>
+        <ul class="nav-links">
+            <li><a href="hackathon.html">Hackathons</a></li>
+            <li><a href="create-team.html">Create Team</a></li>
+            <li><a href="find-team.html">Join a Team</a></li>
+            <li><a href="find teammates.html">Find Teammated</a></li>
+            <li><a href="team-details.html">My Team</a></li>
+            <li><a href="signup.html">Build Your Profile</a></li>
+        </ul>
+        <button class="logout-btn">Logout</button>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>🚀 Upcoming Hackathons</h1>
+
+        <!-- Hackathon Cards -->
+        <div class="hackathon-grid">
+
+            <!-- Hackathon 1 -->
+            <div class="hackathon-card">
+                <h2>Smart India Hackathon 2025</h2>
+                <ul>
+                    <li><strong>📍 Place:</strong> New Delhi, India</li>
+                    <li><strong>🕒 Time:</strong> 15th June, 9:00 AM (24-Hour)</li>
+                    <li><strong>👥 Team Size:</strong> 4–6 Members</li>
+                    <li><strong>⏳ Deadline:</strong> 30th May 2025</li>
+                </ul>
+                <p>Solve real-world problems for Indian ministries and industries. Compete nationally and win big!</p>
+                <a href="https://sih.gov.in/" target="_blank">
+                    <button class="apply-btn">Apply Now</button>
+                </a>
+            </div>
+
+            <!-- Hackathon 2 -->
+            <div class="hackathon-card">
+                <h2>Google Solution Challenge 2025</h2>
+                <ul>
+                    <li><strong>📍 Place:</strong> Online / Hybrid</li>
+                    <li><strong>🕒 Time:</strong> March – May 2025</li>
+                    <li><strong>👥 Team Size:</strong> Up to 4 Members</li>
+                    <li><strong>⏳ Deadline:</strong> 28th February 2025</li>
+                </ul>
+                <p>Build impactful solutions using Google tech aligned with UN SDGs. Open to student developers
+                    globally.</p>
+                <a href="https://developers.google.com/community/gdsc-solution-challenge" target="_blank">
+                    <button class="apply-btn">Apply Now</button>
+                </a>
+            </div>
+
+            <!-- Hackathon 3 -->
+            <div class="hackathon-card">
+                <h2>NASA Space Apps Challenge</h2>
+                <ul>
+                    <li><strong>📍 Place:</strong> Global (Online + Local Events)</li>
+                    <li><strong>🕒 Time:</strong> 5th–6th October 2025</li>
+                    <li><strong>👥 Team Size:</strong> 1–6 Members</li>
+                    <li><strong>⏳ Deadline:</strong> 20th September 2025</li>
+                </ul>
+                <p>Join a 48-hour global hackathon using NASA’s open data to solve Earth and space-related challenges.
+                </p>
+                <a href="https://www.spaceappschallenge.org/" target="_blank">
+                    <button class="apply-btn">Apply Now</button>
+                </a>
+            </div>
+
+            <!-- Hackathon 4 -->
+            <div class="hackathon-card">
+                <h2>HackMIT 2025</h2>
+                <ul>
+                    <li><strong>📍 Place:</strong> MIT, Cambridge, USA</li>
+                    <li><strong>🕒 Time:</strong> 20th–21st September 2025</li>
+                    <li><strong>👥 Team Size:</strong> Up to 4 Members</li>
+                    <li><strong>⏳ Deadline:</strong> 10th August 2025</li>
+                </ul>
+                <p>One of the most prestigious student-run hackathons, with talent from around the world.</p>
+                <a href="https://hackmit.org/" target="_blank">
+                    <button class="apply-btn">Apply Now</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

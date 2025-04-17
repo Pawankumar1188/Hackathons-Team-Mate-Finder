@@ -1,131 +1,10 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create a Team - HackBud</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #111;
-            color: #fff;
-            padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #00ffcc;
-        }
-
-        form {
-            max-width: 600px;
-            margin: auto;
-            background-color: #222;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        label {
-            display: block;
-            margin-top: 15px;
-        }
-
-        input,
-        textarea,
-        select,
-        button {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border-radius: 5px;
-            border: none;
-        }
-
-        button {
-            background-color: #00ffcc;
-            color: black;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-
-        .teammates-list {
-            margin-top: 20px;
-            padding-left: 20px;
-        }
-
-        .teammates-list li {
-            margin-bottom: 5px;
-        }
-
-        .success {
-            color: lightgreen;
-            font-size: 0.9em;
-        }
-    </style>
-</head>
-
-<body>
-
-    <h1>Create a Team on HackBud</h1>
-
-    <form id="team-form">
-        <label for="team-name">Team Name:</label>
-        <input type="text" id="team-name" name="team-name" required />
-
-        <label for="team-description">Team Description:</label>
-        <textarea id="team-description" name="team-description" rows="4" required></textarea>
-
-        <label for="teammate-email">Add Teammate (Email or Username):</label>
-        <input type="text" id="teammate-email" placeholder="example@domain.com" />
-        <button type="button" onclick="addTeammate()">Add to Team</button>
-
-        <ul class="teammates-list" id="teammates-list"></ul>
-
-        <button type="submit">Create Team</button>
-    </form>
-
-    <script>
-        const teammates = [];
-        const list = document.getElementById("teammates-list");
-
-        function addTeammate() {
-            const emailInput = document.getElementById("teammate-email");
-            const email = emailInput.value.trim();
-
-            if (email && !teammates.includes(email)) {
-                teammates.push(email);
-                const li = document.createElement("li");
-                li.textContent = email + " - Request Sent ✅";
-                list.appendChild(li);
-                emailInput.value = "";
-            } else {
-                alert("Invalid or duplicate email/username.");
-            }
-        }
-
-        document.getElementById("team-form").addEventListener("submit", function (e) {
-            e.preventDefault();
-            alert("🎉 Team Created! Requests sent to teammates.");
-            // Here, you can send the data to a backend if needed
-            this.reset();
-            list.innerHTML = "";
-            teammates.length = 0;
-        });
-    </script>
-
-</body>
-
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create a Team - HackBud</title>
+    <title>Create a Team - Hackathons Team Mate Finder</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -189,7 +68,7 @@
 
 <body>
 
-    <h1>Create a Team on HackBud</h1>
+    <h1>Create a Team on Hackathons Team Mate Finder</h1>
 
     <!-- Team Creation Form -->
     <form id="team-form">
